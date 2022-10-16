@@ -1,0 +1,69 @@
+* {
+box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(90deg, #7D9CC0, #7D9CC0);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.search {
+    position: relative;
+    height: 90px;
+}
+.search .input {
+    background-color: #fff;
+    border: 100;
+    font-size: 18px;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+}
+.btn {
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 50;
+    height: 50px;
+    width: 50px;
+}
+.btn:focus,
+.input:focus {
+    outline: none;
+}
+.search .input {
+    width: 300px;
+}
+
+/*----add some words to front page---*/
+.text-box{
+    width:90%;
+    color: rgb(61, 57, 57);
+    position: absolute;
+    top: 30%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box hl{
+    font-size: 52px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+}
+
+
+/***chartA bar----*/
+.myChart{
+    position: relative;
+    height: 90px;
+}
