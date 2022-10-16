@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewpoint" content="with=device-width, initial -scale=1.0">
+    <title>Nutrition Analysis</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="Index.html"><img src="images/bitcoin.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" oneclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="insurance.html">Insurance Plan</a></li>
+                    <li><a href="Jobs.html">Jobs</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" oneclick="showMenu()"></i>
+        </nav>
+<div class="text-box">
+    <hl>Nutrition Analysis</hl>
+    <br></br>
+    <p>Your food score is
+        <br></br>
+    <a href="" class="hero-btn">56 / 150 </a>
+    <br></br>
+    <br>Be sustainable and learn more below!</p>
+</div>
+    
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<body>
+<!---your food contain-->
+<section class = "Wine">
+    <h1>Your food "fries" and "pineapple pizza" contain...</h1>
+</section>
+<!-----graph------>
+<canvas id="myChart" class= "chartA" style="border:1px solid black;margin-left:auto;margin-top:50px;margin-right:auto;max-width:1200px "></canvas>
+
+<script>
+var xValues = ["Sugar", "Sodium", "Trans Fat", "MSG", "Antioxidants"];
+var yValues = [55, 49, 44, 24, 46];
+var barColors = ["red", "green","blue","orange","brown"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "nutrients consumed today (maximum: 100%)"
+    }
+  }
+});
+</script>
+
+</body>
+
+<!------course---->
+<section class="Wine">
+    <hl>Food Recommendation in your next meal:</hl>
+    <p></p>
+
+    <div class="row">
+        <div class="Wine-col">
+            <h3>Broccoli</h3>
+            <p>Steam Rice</p>
+            <p>~ $12</p>
+        </div>
+        <div class="Wine-col">
+            <h3>Oats</h3>
+            <p>Milk with fruit</p>
+            <p>~ $13</p>
+        </div>
+        <div class="Wine-col">
+            <h3>Salmon</h3>
+            <p>Brown Rice</p>
+            <p>~ $17</p>
+    </div>
+
+
+</section>
+
+
+<!-------client section-->
+
+<section class="Client">
+    <hl>Our Global Clients</hl>
+    <p>UK, US, Japan, South Africa, China, Korea, Thailand, Singapore, India, Greece, Denmark, Portugal, Italy, New Zealand...</p>
+
+    <div class ="row">
+        <div class="Client-col">
+            <img src="images/Flag_of_Macau.svg.png">
+            <div class="layer">
+                <h3><b>30+ Countries, 6 milions users!</b></h3>
+            </div>
+
+        </div>
+        </div>
+</section>
+
+<!-------Facilities--->
+
+<section class="facilities">
+    <hl>Below is the our insurance plans</hl>
+    <p>**Exclusive clients only**</p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/pngwing.com.png">
+            <h3>Health Score > 100 for 300 days</h3>
+            <p>Platinum $500/yr</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/pngkey.com-gold-logo-png-4209348.png">
+            <h3>Health Score > 90 for 150 days</h3>
+            <p>Gold $999/yr</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/Silver-Free-Download-PNG.png">
+            <h3>Health Score > 85 for 60 days</h3>
+            <p>Sliver $1399/yr</p>
+        </div>
+
+
+
+</section>
+
+<!-------textimonials--->
+
+<section class="testimonials">
+    <hl>What Our Clients Say</hl>
+    <p>"Fantastic! This app changed my life!"</p>
+
+    <div class="row">
+        <div class="testimonials-col">
+            <img src="images/spongebob-laughing.gif">
+            <div>
+                <p>This is a masterpiece!!</p>
+                <h3>patrick star</h3>
+            </div>
+        </div>
+        <div class="testimonials-col">
+            <img src="images/498-4985414_patrick-star-cartoon-drawing-image-mr-spongebob-cartoon.png">
+            <div>
+                <p>I am healthier than ever!
+                </p>
+                <h3>spongebob</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!------CALL TO ACTION--->
+<section class="cta">
+    <h1>Message chamles to learn more</h1>
+    <a href="" class="hero-btn">
+        chamles0611@gmail.com
+    </a>
+</section>
+
+<!------Footer--->
+<section class="footer">
+    <h4>About US</h4>
+    <P>U.S Based since 2022</P>
+    <p>by Chamles Choi</p>
+</section>
+</body>
+</html>
